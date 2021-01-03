@@ -5,6 +5,24 @@ public class MarsPhoto {
     private Integer sol;
     private MarsCamera camera;
     private String imgSrc;
+    private String earthData;
+    private MarsRover rover;
+
+    public String getEarthData() {
+        return earthData;
+    }
+
+    public void setEarthData(String earthData) {
+        this.earthData = earthData;
+    }
+
+    public MarsRover getRover() {
+        return rover;
+    }
+
+    public void setRover(MarsRover rover) {
+        this.rover = rover;
+    }
 
     public Long getId() {
         return id;
@@ -47,4 +65,6 @@ public class MarsPhoto {
                 ", imgSrc='" + imgSrc + '\'' +
                 '}';
     }
+
+
 }
