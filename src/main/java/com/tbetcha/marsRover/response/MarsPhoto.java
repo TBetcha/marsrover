@@ -1,9 +1,12 @@
 package com.tbetcha.marsRover.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class MarsPhoto {
     private Long id;
     private Integer sol;
     private MarsCamera camera;
+    @JsonProperty("img_src")
     private String imgSrc;
     private String earthData;
     private MarsRover rover;
@@ -62,7 +65,7 @@ public class MarsPhoto {
                 "id=" + id +
                 ", sol=" + sol +
                 ", camera=" + camera +
-                ", imgSrc='" + imgSrc + '\'' +
+                ", imgSrc='" + imgSrc +
                 '}';
     }
 
